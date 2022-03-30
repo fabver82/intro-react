@@ -17,19 +17,23 @@ function App() {
 
 const ToDoList = () => {
   return (
-    <>
     <div>
       <h2>Todos</h2>
-      <label>
-        <input type="checkbox" />
-        {' '} test
-      </label>
-      <label>
-        <input type="checkbox" />
-        {' '} test
-      </label>
+      <ul>
+        <li>
+          <label>
+          <input type="checkbox" />
+          {' '} todo 1
+        </label>
+        </li>
+        <li>
+          <label>
+          <input type="checkbox" />
+          {' '} todo 2
+        </label>
+        </li>
+      </ul>
     </div>
-    </>
   );
 }
 
