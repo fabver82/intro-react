@@ -9,7 +9,7 @@ function App() {
 
   useEffect(() => {
     const storedTodos = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
-    if (storedTodos.length !== 0) setTodos(storedTodos);
+    if (storedTodos) setTodos(storedTodos);
     console.log(storedTodos);
   }, []);
 
@@ -23,13 +23,22 @@ function App() {
     todo.complete = !todo.complete;
     setTodos(newTodos);
   }
+  function filterCompletedTodos() {
+    return todos.filter((todo) => todo.complete);
+  }
+  function filterActiveTodos() {
+    return todos.filter((todo) => !todo.complete);
+  }
+  function filterAllTodos() {
+    return todos.filter((todo) => !todo.complete || todo.complete);
+  }
 
   return (
     <div className="App">
       <header className="App-header">
         <h1>My Todo App</h1>
       </header>
-      <AddTodoForm todos={todos} setTodos={setTodos} />
+      <AddTodoForm setTodos={setTodos} />
       <TodoList todos={todos} toggleTodo={toggleTodo} />
 
       <div>
@@ -41,13 +50,13 @@ function App() {
         left todo
       </div>
       <div>
-        <button>All</button>
+        <button onClick={filterAllTodos}>All</button>
       </div>
       <div>
-        <button>Active</button>
+        <button onClick={filterActiveTodos}>Active</button>
       </div>
       <div>
-        <button>Completed</button>
+        <button onClick={filterCompletedTodos}>Completed</button>
       </div>
     </div>
   );

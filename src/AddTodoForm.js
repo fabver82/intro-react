@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import { v4 as uuidv4 } from "uuid";
 
-export default function AddTodoForm({ todos, setTodos }) {
+export default function AddTodoForm({ setTodos }) {
   const todoNameRef = useRef();
   function handleAddTodo(e) {
     const name = todoNameRef.current.value;
