@@ -1,5 +1,4 @@
 import React from "react";
-import "./new.css";
 import App from "./App";
 import * as ReactDOMClient from "react-dom/client";
 
