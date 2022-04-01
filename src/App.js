@@ -23,15 +23,6 @@ function App() {
     todo.complete = !todo.complete;
     setTodos(newTodos);
   }
-  function filterCompletedTodos() {
-    setFilter("complete");
-  }
-  function filterActiveTodos() {
-    setFilter("active");
-  }
-  function filterAllTodos() {
-    setFilter("all");
-  }
 
   return (
     <div className="App">
@@ -50,13 +41,13 @@ function App() {
         left todo
       </div>
       <div>
-        <button onClick={filterAllTodos}>All</button>
+        <button onClick={() => setFilter("all")}>All</button>
       </div>
       <div>
-        <button onClick={filterActiveTodos}>Active</button>
+        <button onClick={() => setFilter("active")}>Active</button>
       </div>
       <div>
-        <button onClick={filterCompletedTodos}>Completed</button>
+        <button onClick={() => setFilter("complete")}>Completed</button>
       </div>
     </div>
   );
