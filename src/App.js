@@ -6,7 +6,7 @@ const LOCAL_STORAGE_KEY = "myownkey";
 
 function App() {
   const [todos, setTodos] = useState([]);
-
+  const [filter, setFilter] = useState("all");
   useEffect(() => {
     const storedTodos = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
     if (storedTodos) setTodos(storedTodos);
@@ -24,13 +24,13 @@ function App() {
     setTodos(newTodos);
   }
   function filterCompletedTodos() {
-    return todos.filter((todo) => todo.complete);
+    setFilter("complete");
   }
   function filterActiveTodos() {
-    return todos.filter((todo) => !todo.complete);
+    setFilter("active");
   }
   function filterAllTodos() {
-    return todos.filter((todo) => !todo.complete || todo.complete);
+    setFilter("all");
   }
 
   return (
@@ -39,7 +39,7 @@ function App() {
         <h1>My Todo App</h1>
       </header>
       <AddTodoForm setTodos={setTodos} />
-      <TodoList todos={todos} toggleTodo={toggleTodo} />
+      <TodoList todos={todos} filter={filter} toggleTodo={toggleTodo} />
 
       <div>
         {
