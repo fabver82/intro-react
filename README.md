@@ -17,6 +17,8 @@
 <p>You can create "todos",and you can sort them by active or completed. You will see how many todos are left and you can add them by filling the form above and press enter or click the "add Todo" button.
 When a Todo is complete, just click it and it will disapear from the active todo list</p>
 
+<p>use of framer-motion library for reordering list of todos.</p>
+
 ### 🏠 [Homepage](https://fabver82.github.io/intro-react)
 
 ### ✨ [Demo](https://fabver82.github.io/intro-react/)
