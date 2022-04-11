@@ -14,11 +14,37 @@
         display: flex;
         flex-direction: row;
         background-color:white;
+        border: 0.1rem solid black;
+        align-items: center;
+    }
+    &__footer > *{
+        margin-left:1rem;
     }
     &__main,&__footer{
         margin-top:0.2rem;
     }
+}
+.todoForm{
+    background-color:white;
+    border: 0.1rem solid black;
 
+}
+.todoForm > input{
+    border: 0;
+}
+.todoForm > button{
+    border: 0;
+}
+.filter-link{
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    /*optional*/
+    font-family: arial, sans-serif;
+    /*input has OS specific font-family*/
+    color: #069;
+    text-decoration: underline;
+    cursor: pointer;
 }
 ul{
     padding-left:0;

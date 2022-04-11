@@ -12,10 +12,9 @@ export default function AddTodoForm({ setTodos }) {
     todoNameRef.current.value = null;
   }
   return (
-    <div>
-      <input ref={todoNameRef} type="text" placeholder="Type a new todo" />
-      <br />
+    <div className="todoForm">
       <button onClick={handleAddTodo}>Add Todo</button>
+      <input ref={todoNameRef} type="text" placeholder="Type a new todo" />
     </div>
   );
 }

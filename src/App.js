@@ -44,13 +44,19 @@ function App() {
           left todo
         </div>
         <div>
-          <button onClick={() => setFilter("all")}>All</button>
+          <button className="filter-link" onClick={() => setFilter("all")}>
+            All
+          </button>
         </div>
         <div>
-          <button onClick={() => setFilter("active")}>Active</button>
+          <button className="filter-link" onClick={() => setFilter("active")}>
+            Active
+          </button>
         </div>
         <div>
-          <button onClick={() => setFilter("complete")}>Completed</button>
+          <button className="filter-link" onClick={() => setFilter("complete")}>
+            Completed
+          </button>
         </div>
       </footer>
     </div>
