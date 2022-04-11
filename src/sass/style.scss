@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'checkbox';
+@import 'todoForm';
 
 .App{
     background-color: $appBackColor;
@@ -15,11 +16,14 @@
     &__header{
         text-align: center;
     }
+    h1{
+        font-size:3rem;
+        margin:0.5rem;
+    }
     &__footer{
         display: flex;
         flex-direction: row;
         background-color:$listBackColor;
-        // border: 0.1rem solid black;
         align-items: center;
     }
     &__footer > *{
@@ -29,31 +33,7 @@
         margin-top:0.2rem;
     }
 }
-.todoForm{
-    display:flex;
-    background-color:$listBackColor;
-}
-.todoForm > input{
-    border: 0;
-    box-sizing:content-box;
-    width:100%;
-    font-size:2rem;
-    font-family: 'Quick Sand';
-    color:$mainColor;
-}
-.todoForm > input:focus{
-    outline: none !important;
-    border:2px solid $mainColor;
-}
-.todoForm > button{
-    border: 0;
-    background-color: white
-}
-.icon{
-    width:3rem;
-    font-size: 2rem;
-    color:$mainColor;
-}
+
 .filter-link{
     background: none!important;
     border: none;
