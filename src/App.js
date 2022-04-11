@@ -30,9 +30,10 @@ function App() {
       <header className="App__header">
         <h1>Todos</h1>
       </header>
-      <AddTodoForm setTodos={setTodos} />
-      <TodoList todos={todos} filter={filter} toggleTodo={toggleTodo} />
-
+      <main className="App__main">
+        <AddTodoForm setTodos={setTodos} />
+        <TodoList todos={todos} filter={filter} toggleTodo={toggleTodo} />
+      </main>
       <footer className="App__footer">
         <div>
           {
