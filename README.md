@@ -16,8 +16,12 @@
 
 <p>You can create "to-dos", and you can sort them by active or completed. You will see how many to-dos are left and you can add them by filling the form above and press enter or click the "V" button.
 When a to-do is complete, just click it and it will disappear from the active to-do list</p>
-
 <p>use of framer-motion library for reordering list of todos, and uuid for unique ids of the Todos</p>
+
+### Libraries
+
+- Framer-motion : [NPM link](https://www.npmjs.com/package/framer-motion) [doc](https://www.framer.com/motion/)
+- UUID : [NPM link](https://www.npmjs.com/package/uuid)
 
 ### ✨ [Demo](https://fabver82.github.io/intro-react/)
 
