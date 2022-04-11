@@ -19,8 +19,6 @@ When a Todo is complete, just click it and it will disapear from the active todo
 
 <p>use of framer-motion library for reordering list of todos.</p>
 
-### 🏠 [Homepage](https://fabver82.github.io/intro-react)
-
 ### ✨ [Demo](https://fabver82.github.io/intro-react/)
 
 ## Install
