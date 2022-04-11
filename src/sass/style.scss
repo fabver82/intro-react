@@ -51,9 +51,12 @@
     /*optional*/
     font-family: arial, sans-serif;
     /*input has OS specific font-family*/
-    color: #069;
+    color: rgb(41, 153, 0);
     text-decoration: underline;
     cursor: pointer;
+    &--active{
+        color: #21f34b;;
+    }
 }
 ul{
     padding-left:0;

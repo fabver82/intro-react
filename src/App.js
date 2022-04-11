@@ -8,6 +8,7 @@ const LOCAL_STORAGE_KEY = "myownkey";
 function App() {
   const [todos, setTodos] = useState([]);
   const [filter, setFilter] = useState("active");
+  console.log(filter);
   useEffect(() => {
     const storedTodos = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
     if (storedTodos) setTodos(storedTodos);
@@ -44,17 +45,41 @@ function App() {
           left todo
         </div>
         <div>
-          <button className="filter-link" onClick={() => setFilter("all")}>
+          <button
+            className={
+              "filter-link " +
+              (filter === "all"
+                ? "filter-link--active"
+                : "filter-link--disabled")
+            }
+            onClick={() => setFilter("all")}
+          >
             All
           </button>
         </div>
         <div>
-          <button className="filter-link" onClick={() => setFilter("active")}>
+          <button
+            className={
+              "filter-link " +
+              (filter === "active"
+                ? "filter-link--active"
+                : "filter-link--disabled")
+            }
+            onClick={() => setFilter("active")}
+          >
             Active
           </button>
         </div>
         <div>
-          <button className="filter-link" onClick={() => setFilter("complete")}>
+          <button
+            className={
+              "filter-link " +
+              (filter === "complete"
+                ? "filter-link--active"
+                : "filter-link--disabled")
+            }
+            onClick={() => setFilter("complete")}
+          >
             Completed
           </button>
         </div>
