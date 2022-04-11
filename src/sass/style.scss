@@ -3,6 +3,7 @@
 
 .App{
     background-color: $appBackColor;
+    font-family: 'Quick Sand';
     color:$mainColor;
     max-width:50vw;
     min-width:372px;
@@ -31,18 +32,18 @@
 .todoForm{
     display:flex;
     background-color:$listBackColor;
-    // border: 0.1rem solid black;
 }
 .todoForm > input{
     border: 0;
     box-sizing:content-box;
     width:100%;
-    font-size:22px;
+    font-size:2rem;
+    font-family: 'Quick Sand';
     color:$mainColor;
 }
 .todoForm > input:focus{
     outline: none !important;
-    border:1px solid $mainColor;
+    border:2px solid $mainColor;
 }
 .todoForm > button{
     border: 0;
