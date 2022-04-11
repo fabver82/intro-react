@@ -1,6 +1,8 @@
 @import 'variables';
 @import 'checkbox';
 @import 'todoForm';
+@import 'todoItem';
+@import 'footer';
 
 .App{
     background-color: $appBackColor;
@@ -32,28 +34,4 @@
     &__main,&__footer{
         margin-top:0.2rem;
     }
-}
-
-.filter-link{
-    background: none!important;
-    border: none;
-    padding: 0!important;
-    /*optional*/
-    font-family: arial, sans-serif;
-    /*input has OS specific font-family*/
-    color: $mainColorDesat;
-    text-decoration: underline;
-    cursor: pointer;
-    &--active{
-        color: $mainColor;
-    }
-}
-ul{
-    padding-left:0;
-}
-li{
-    list-style: none;
-    border: 0.1rem solid $mainColor;
-    margin-top:0.2rem;
-    background-color:$listBackColor;
 }

@@ -1,0 +1,14 @@
+.filter-link{
+    background: none!important;
+    border: none;
+    padding: 0!important;
+    /*optional*/
+    font-family: 'Quick Sand',arial, sans-serif;
+    /*input has OS specific font-family*/
+    color: $mainColorDesat;
+    text-decoration: underline;
+    cursor: pointer;
+    &--active{
+        color: $mainColor;
+    }
+}
