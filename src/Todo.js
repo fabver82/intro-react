@@ -6,13 +6,13 @@ export default function Todo({ todo, toggleTodo }) {
   }
   return (
     <li>
-      <label>
+      <label className="checkbox">
         <input
           type="checkbox"
           onChange={handleTodoClick}
           checked={todo.complete}
-        />{" "}
-        {todo.name}{" "}
+        />
+        <span className="checkmark"></span> {todo.name}{" "}
       </label>
     </li>
   );
