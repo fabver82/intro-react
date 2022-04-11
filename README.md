@@ -14,10 +14,10 @@
 
 > Introduction to react by creating a simple Todo App
 
-<p>You can create "todos",and you can sort them by active or completed. You will see how many todos are left and you can add them by filling the form above and press enter or click the "V" button.
-When a Todo is complete, just click it and it will disapear from the active todo list</p>
+<p>You can create "to-dos", and you can sort them by active or completed. You will see how many to-dos are left and you can add them by filling the form above and press enter or click the "V" button.
+When a to-do is complete, just click it and it will disappear from the active to-do list</p>
 
-<p>use of framer-motion library for reordering list of todos.</p>
+<p>use of framer-motion library for reordering list of todos, and uuid for unique ids of the Todos</p>
 
 ### ✨ [Demo](https://fabver82.github.io/intro-react/)
 
