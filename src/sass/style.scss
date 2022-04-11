@@ -14,7 +14,7 @@
         display: flex;
         flex-direction: row;
         background-color:white;
-        border: 0.1rem solid black;
+        // border: 0.1rem solid black;
         align-items: center;
     }
     &__footer > *{
@@ -27,7 +27,7 @@
 .todoForm{
     display:flex;
     background-color:white;
-    border: 0.1rem solid black;
+    // border: 0.1rem solid black;
 }
 .todoForm > input{
     border: 0;
@@ -36,7 +36,8 @@
     font-size:22px;
 }
 .todoForm > input:focus{
-    outline-color: #21f34b;
+    outline: none !important;
+    border:1px solid #21f34b;
 }
 .todoForm > button{
     border: 0;
@@ -58,7 +59,7 @@ ul{
 }
 li{
     list-style: none;
-    border: 0.1rem solid black;
+    border: 0.1rem solid #21f34b;
     margin-top:0.2rem;
     background-color:white;
 }
