@@ -4,6 +4,8 @@ import { v4 as uuidv4 } from "uuid";
 export default function AddTodoForm({ setTodos }) {
   const todoNameRef = useRef();
   function handleAddTodo(e) {
+    console.log("ok");
+    e.preventDefault();
     const name = todoNameRef.current.value;
     if (name === "") return;
     setTodos((prevTodos) => {
@@ -12,9 +14,9 @@ export default function AddTodoForm({ setTodos }) {
     todoNameRef.current.value = null;
   }
   return (
-    <div className="todoForm">
-      <button onClick={handleAddTodo}>Add Todo</button>
+    <form onSubmit={handleAddTodo} className="todoForm">
+      <button type="submit">Add Todo</button>
       <input ref={todoNameRef} type="text" placeholder="Type a new todo" />
-    </div>
+    </form>
   );
 }
