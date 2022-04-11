@@ -1,11 +1,12 @@
 import React from "react";
+import { Reorder } from "framer-motion";
 
 export default function Todo({ todo, toggleTodo }) {
   function handleTodoClick() {
     toggleTodo(todo.id);
   }
   return (
-    <li>
+    <Reorder.Item value={todo} id={todo.id}>
       <label className="checkbox">
         <input
           type="checkbox"
@@ -14,6 +15,6 @@ export default function Todo({ todo, toggleTodo }) {
         />
         <span className="checkmark"></span> {todo.name}{" "}
       </label>
-    </li>
+    </Reorder.Item>
   );
 }

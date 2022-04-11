@@ -33,7 +33,12 @@ function App() {
       </header>
       <main className="App__main">
         <AddTodoForm setTodos={setTodos} />
-        <TodoList todos={todos} filter={filter} toggleTodo={toggleTodo} />
+        <TodoList
+          todos={todos}
+          filter={filter}
+          setTodos={setTodos}
+          toggleTodo={toggleTodo}
+        />
       </main>
       <footer className="App__footer">
         <div>
