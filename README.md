@@ -37,7 +37,6 @@ npm run start
 
 👤 **Fabien Vermeiren**
 
-- Website: Fabien Vermeiren
 - Github: [@fabver82](https://github.com/fabver82)
 - LinkedIn: [@fabien-vermeiren-763674230](https://linkedin.com/in/fabien-vermeiren-763674230)
 
