@@ -15,7 +15,9 @@ export default function AddTodoForm({ setTodos }) {
   }
   return (
     <form onSubmit={handleAddTodo} className="todoForm">
-      <button type="submit">Add Todo</button>
+      <button type="submit">
+        <i className="fa-solid fa-angle-down icon"></i>
+      </button>
       <input ref={todoNameRef} type="text" placeholder="Type a new todo" />
     </form>
   );

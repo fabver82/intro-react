@@ -1,8 +1,9 @@
+@import 'variables';
 @import 'checkbox';
 
 .App{
-    background-color: rgb(220, 70, 215);
-    color:#21f34b;
+    background-color: $appBackColor;
+    color:$mainColor;
     max-width:50vw;
     min-width:372px;
     border-radius:15px;
@@ -14,7 +15,7 @@
     &__footer{
         display: flex;
         flex-direction: row;
-        background-color:white;
+        background-color:$listBackColor;
         // border: 0.1rem solid black;
         align-items: center;
     }
@@ -27,7 +28,7 @@
 }
 .todoForm{
     display:flex;
-    background-color:white;
+    background-color:$listBackColor;
     // border: 0.1rem solid black;
 }
 .todoForm > input{
@@ -38,11 +39,16 @@
 }
 .todoForm > input:focus{
     outline: none !important;
-    border:1px solid rgb(33, 243, 75);
+    border:1px solid $mainColor;
 }
 .todoForm > button{
     border: 0;
-    background-color: #21f34b;
+    background-color: white
+}
+.icon{
+    width:3rem;
+    font-size: 2rem;
+    color:$mainColor;
 }
 .filter-link{
     background: none!important;
@@ -51,11 +57,11 @@
     /*optional*/
     font-family: arial, sans-serif;
     /*input has OS specific font-family*/
-    color: rgb(41, 153, 0);
+    color: $mainColorDesat;
     text-decoration: underline;
     cursor: pointer;
     &--active{
-        color: #21f34b;;
+        color: $mainColor;
     }
 }
 ul{
@@ -63,7 +69,7 @@ ul{
 }
 li{
     list-style: none;
-    border: 0.1rem solid #21f34b;
+    border: 0.1rem solid $mainColor;
     margin-top:0.2rem;
-    background-color:white;
+    background-color:$listBackColor;
 }
