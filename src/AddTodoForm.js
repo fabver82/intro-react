@@ -4,7 +4,6 @@ import { v4 as uuidv4 } from "uuid";
 export default function AddTodoForm({ setTodos }) {
   const todoNameRef = useRef();
   function handleAddTodo(e) {
-    console.log("ok");
     e.preventDefault();
     const name = todoNameRef.current.value;
     if (name === "") return;
